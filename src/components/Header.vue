@@ -11,7 +11,7 @@ const signOut = () => userManager.signoutRedirect();
 
 <template>
   <div v-if="userRef" class="items">
-      <h3>Logged in as {{ userRef.profile.given_name }} 🎉</h3>
+      <h3>Logged in as {{ userRef.profile.email }} 🎉</h3>
       <button @click="signOut">Logout</button>
   </div>
 
